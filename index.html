@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="card">
+      <h1 class="title">Will you be my Valentine?</h1>
+      <p class="subtitle">(one simple question)</p>
+
+      <div class="buttons">
+        <button id="yesBtn" class="btn yes">Yes 💖</button>
+        <button id="noBtn" class="btn no">No 😿</button>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden" role="status" aria-live="polite">
+      <!-- Inline SVG cat so the page works offline -->
+      <svg id="catImg" class="cat" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#ffd1dc"/>
+            <stop offset="1" stop-color="#ffb3c6"/>
+          </linearGradient>
+        </defs>
+        <rect rx="12" width="200" height="160" fill="#fff6fb" />
+        <g transform="translate(20,18)">
+          <ellipse cx="60" cy="80" rx="50" ry="36" fill="url(#g)"/>
+          <circle cx="36" cy="56" r="6" fill="#3b2a2a"/>
+          <circle cx="84" cy="56" r="6" fill="#3b2a2a"/>
+          <path d="M48 74 q12 10 24 0" stroke="#3b2a2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M16 44 q-6 -12 14 -26 q20 12 24 26" fill="#ffd6e3" stroke="#ffb0c6"/>
+          <path d="M104 44 q6 -12 -14 -26 q-20 12 -24 26" fill="#ffd6e3" stroke="#ffb0c6"/>
+          <ellipse cx="60" cy="76" rx="34" ry="10" fill="#fff0f4" opacity="0.9"/>
+        </g>
+      </svg>
+      <h2>Thank you! You're my favorite 💕</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
